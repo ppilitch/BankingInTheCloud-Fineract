@@ -6,11 +6,11 @@ userName=$1
 appStage=$2
 microservices=("identity" "office" "customer" "accounting" "portfolio" "provisioner")
 
-if [ $userName == "" ]
+if [ "$userName" == "" ]
   then
     userName="olaf"
 fi
-if [ $appStage == "" ]
+if [ "$appStage" == "" ]
   then
     appStage="dev"
 fi
@@ -19,6 +19,5 @@ sed 's/<user>/'$userName'/g; s/<stage>/'$appStage'/g' docker-compose-skeleton.ym
 
 for ms in "${microservices[@]}"
 do
-  # the name of the file consist of 
   cp "./config/"$ms"-v1-default.yml" "./config/"$ms"_"$userName"-v1-"$appStage".yml"
 done
