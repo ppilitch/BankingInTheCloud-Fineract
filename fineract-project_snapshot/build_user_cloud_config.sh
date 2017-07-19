@@ -19,5 +19,6 @@ sed 's/<user>/'$userName'/g; s/<stage>/'$appStage'/g' docker-compose-skeleton.ym
 
 for ms in "${microservices[@]}"
 do
-  cp "./config/"$ms"-v1-default.yml" "./config/"$ms"_"$userName"-v1-"$userName"_"$appStage".yml"
+  # the name of the file consist of 
+  cp "./config/"$ms"-v1-default.yml" "./config/"$ms"_"$userName"-v1-"$appStage".yml"
 done

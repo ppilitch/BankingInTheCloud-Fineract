@@ -69,7 +69,7 @@ services:
       - SPRING_CLOUD_CONFIG_URI=http://35.158.23.99:8888
       - SPRING_CLOUD_CONFIG_LABEL=extract-config-and-discovery-to-cloud
       - SPRING_APPLICATION_NAME=identity_<user>-v1
-      - SPRING_PROFILES_ACTIVE=<user>_<stage>
+      - SPRING_PROFILES_ACTIVE=<stage>
     depends_on:
         - mariadb
         - cassandra
@@ -91,7 +91,7 @@ services:
       - SPRING_CLOUD_CONFIG_URI=http://35.158.23.99:8888
       - SPRING_CLOUD_CONFIG_LABEL=extract-config-and-discovery-to-cloud
       - SPRING_APPLICATION_NAME=provisioner_<user>-v1
-      - SPRING_PROFILES_ACTIVE=<user>_<stage>
+      - SPRING_PROFILES_ACTIVE=<stage>
     depends_on:
         - mariadb
         - cassandra
@@ -113,7 +113,7 @@ services:
       - SPRING_CLOUD_CONFIG_URI=http://35.158.23.99:8888
       - SPRING_CLOUD_CONFIG_LABEL=extract-config-and-discovery-to-cloud
       - SPRING_APPLICATION_NAME=office_<user>-v1
-      - SPRING_PROFILES_ACTIVE=<user>_<stage>
+      - SPRING_PROFILES_ACTIVE=<stage>
     depends_on:
       - mariadb
       - cassandra
@@ -135,7 +135,7 @@ services:
       - SPRING_CLOUD_CONFIG_URI=http://35.158.23.99:8888
       - SPRING_CLOUD_CONFIG_LABEL=extract-config-and-discovery-to-cloud
       - SPRING_APPLICATION_NAME=customer_<user>-v1
-      - SPRING_PROFILES_ACTIVE=<user>_<stage>
+      - SPRING_PROFILES_ACTIVE=<stage>
     depends_on:
       - mariadb
       - cassandra
@@ -157,7 +157,7 @@ services:
       - SPRING_CLOUD_CONFIG_URI=http://35.158.23.99:8888
       - SPRING_CLOUD_CONFIG_LABEL=extract-config-and-discovery-to-cloud
       - SPRING_APPLICATION_NAME=accounting_<user>-v1
-      - SPRING_PROFILES_ACTIVE=<user>_<stage>
+      - SPRING_PROFILES_ACTIVE=<stage>
     depends_on:
       - mariadb
       - cassandra
@@ -179,7 +179,7 @@ services:
       - SPRING_CLOUD_CONFIG_URI=http://35.158.23.99:8888
       - SPRING_CLOUD_CONFIG_LABEL=extract-config-and-discovery-to-cloud
       - SPRING_APPLICATION_NAME=portfolio_<user>-v1
-      - SPRING_PROFILES_ACTIVE=<user>_<stage>
+      - SPRING_PROFILES_ACTIVE=<stage>
     depends_on:
       - mariadb
       - cassandra
